@@ -110,12 +110,6 @@ impl Drop for Bitmap {
     }
 }
 
-pub struct FrameData {
-    pub pixel_data: Vec<u8>,
-    pub width: i32,
-    pub height: i32,
-}
-
 /// 捕获屏幕并返回像素数据
 /// `hwnd` 可以指定窗口句柄，如果为 `None` 则捕获整个桌面
 /// 返回 `FrameData` 包含像素数据、宽度和高度
